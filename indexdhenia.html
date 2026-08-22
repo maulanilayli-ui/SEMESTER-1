@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhenia Layli</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Dhenia</div>
+    <ul class="nav-links">
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#proyek">Proyek</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+    <button id="theme-toggle" class="theme-btn" type="button">🌛 Dark Mode</button>
+  </nav>
+
+  <!-- HERO / BERANDA -->
+  <header id="beranda" class="hero-banner">
+    <img src="dhenia.jpeg" alt="Foto Profil Dhenia Layli" class="profil-img">
+    <div class="hero-text">
+      <h1>Dhenia Layli Maulani</h1>
+      <h2>Prodi Informatika</h2>
+      <p>Love Yourself</p>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+
+    <!-- PROYEK -->
+    <section id="proyek">
+      <h2 class="section-title">Proyek Saya</h2>
+      <!-- Data dari Supabase akan masuk otomatis di sini -->
+      <div id="proyek-container"></div>
+    </section>
+
+    <hr>
+
+    <!-- TENTANG -->
+    <section id="tentang">
+      <h2 class="section-title">Keahlian & Hobi Saya</h2>
+      <ul class="skill-list">
+        <li class="badge">Memasak</li>
+        <li class="badge">Bernyanyi</li>
+        <li class="badge">Photography</li>
+        <li class="badge">Asisten Keperawatan</li>
+        <li class="badge">Public Speaking</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="contact-info">
+      <h2 class="section-title">Kontak</h2>
+      <ul>
+        <li>Email: <a href="mailto:maulanilayli@gmail.com">maulanilayli@gmail.com</a></li>
+        <li>Instagram: <a href="https://instagram.com/dhnialy" target="_blank" rel="noopener noreferrer">@dhnialy</a></li>
+        <li>WhatsApp: <a href="https://wa.me/6282121521926?text=Halo%20Dhenia,%20saya%20ingin%20bertanya..." target="_blank" rel="noopener noreferrer">Kirim Pesan</a></li>
+      </ul>
+
+      <!-- Form Kontak -->
+      <form id="contactForm" class="contact-form">
+        <h3>Kirim Pesan</h3>
+        <div id="alertBox" class="alert"></div>
+
+        <div class="form-group">
+          <label for="namaInput">Nama</label>
+          <input type="text" id="namaInput" name="nama" placeholder="Masukkan nama Anda" required>
+        </div>
+
+        <div class="form-group">
+          <label for="pesanInput">Pesan</label>
+          <textarea id="pesanInput" name="pesan" placeholder="Tulis pesan..." rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="theme-btn">Kirim Pesan</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Dhenia Layli Maulani. All rights reserved.</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script type="module" src="scriptdhenia.js"></script>
+</body>
+
+</html>
